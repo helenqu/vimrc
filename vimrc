@@ -6,8 +6,10 @@ set number
 
 " pathogen package manager
 execute pathogen#infect()
+set t_Co=256
 syntax on
-colorscheme onedark
+set background=light
+colorscheme PaperColor
 filetype plugin indent on
 
 "Use spaces instead of tabs
@@ -41,7 +43,7 @@ set rtp+=~/.fzf
 set noshowmode
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'PaperColor',
       \ }
 
 " configure nerdtree
@@ -58,3 +60,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_yaml_checkers = ['yamllint']
+
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
