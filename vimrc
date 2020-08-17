@@ -8,7 +8,7 @@ set number
 execute pathogen#infect()
 set t_Co=256
 syntax on
-set background=light
+set background=dark
 colorscheme PaperColor
 filetype plugin indent on
 
@@ -43,7 +43,7 @@ set rtp+=~/.fzf
 set noshowmode
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'seoul256',
       \ }
 
 " configure nerdtree
